@@ -1,0 +1,5 @@
+﻿  KruglovTastVS3.cpp
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\kruglovtastvs3.cpp(36): warning C4018: <: несоответствие типов со знаком и без знака
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\kruglovtastvs3.cpp(11): warning C4101: priority: неиспользованная локальная переменная
+  KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.exe
+  KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.pdb (Partial PDB)
