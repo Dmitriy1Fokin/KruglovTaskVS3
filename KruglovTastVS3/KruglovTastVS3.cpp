@@ -8,7 +8,7 @@ int main()
 	char answerToExit = 'Y';
 	int intPriority;
 	string stringRecord;
-	ElementPriority priority;
+	//ElementPriority priority;
 	QueueWithPriority record;
 	QueueElement element;
 
@@ -17,15 +17,15 @@ int main()
 	{
 		cout << "Insert string: ";
 		cin >> stringRecord;
-		cout << "insert priority (1,2,3): ";
+		cout << "insert priority (0,1,2): ";
 		cin >> intPriority;
 		element.name = stringRecord;
 		
 		switch (intPriority)
 		{
-		case 1: record.PutElementToQueue(element, LOW);		break;
-		case 2: record.PutElementToQueue(element, NORMAL);	break;
-		case 3: record.PutElementToQueue(element, HIGH);	break;
+		case 0: record.PutElementToQueue(element, LOW);		break;
+		case 1: record.PutElementToQueue(element, NORMAL);	break;
+		case 2: record.PutElementToQueue(element, HIGH);	break;
 		default: cout << "Wrong priority!!!" << endl;		break;
 		}
 		
@@ -33,9 +33,7 @@ int main()
 		cin >> answerToExit;
 	}
 
-	for (int i = 0; i < record.allRecords.size(); i++)
-		cout << i << ". " << record.allRecords[i].name << "__" << record.allRecords[i].priority << endl;
-
+	record.showAllRecords();
 
 	_getch();
 	return 0;

@@ -4,9 +4,9 @@ using namespace std;
 
 typedef enum
 {
-	LOW = 1,
-	NORMAL = 2,
-	HIGH = 3
+	LOW,
+	NORMAL,
+	HIGH
 } ElementPriority;
 
 typedef struct
@@ -19,6 +19,8 @@ class QueueWithPriority
 {
 public://///////////////////////////////////сделать пиватным и добавить метод show() с отображением всего дека
 	deque <QueueElement> allRecords;
+	//QueueElement elementName;
+	//ElementPriority priority;
 
 
 public:
@@ -37,6 +39,8 @@ public:
 	// метод должен возвращать элемент с наибольшим приоритетом, который был
 	// добавлен в очередь раньше других
 	QueueElement GetElementFromQueue();
+
+	void showAllRecords();
 
 	// Выполнить акселерацию
 	void Accelerate();
