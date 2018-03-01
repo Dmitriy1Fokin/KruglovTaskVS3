@@ -1,11 +1,12 @@
 #include "stdafx.h"
-#include"QueueWithPriority.h"
+#include "QueueWithPriority.h"
+#include "ListClass.h"
 
 
 
 int main()
 {
-	char answerToExit = 'Y';
+	/*char answerToExit = 'Y';
 	int intPriority;
 	string stringRecord;
 	QueueWithPriority record;
@@ -40,8 +41,15 @@ int main()
 	record.Accelerate();
 	record.showAllRecords();
 	cout << "First record with high priority:" << endl;
-	record.showRecord(record.GetElementFromQueue());
+	record.showRecord(record.GetElementFromQueue());*/
 
+	ListClass listWithNum;
+	listWithNum.insertRandNum(15);
+	//(обязательно проверить на длине списка 0, 1. 2, 3, 4, 5, 7, 14)
+	listWithNum.show();
+	cout << "Special sort^\n";
+	listWithNum.specialSort();
+	//listWithNum.show();
 
 	_getch();
 	return 0;

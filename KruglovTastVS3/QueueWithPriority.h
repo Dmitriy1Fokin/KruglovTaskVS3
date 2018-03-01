@@ -17,7 +17,7 @@ typedef struct
 
 class QueueWithPriority
 {
-private://///////////////////////////////////сделать пиватным и добавить метод show() с отображением всего дека
+private:
 	deque <QueueElement> allRecords;
 
 
