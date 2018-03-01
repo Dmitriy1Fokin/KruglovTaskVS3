@@ -69,3 +69,9 @@ void QueueWithPriority::showRecord(QueueElement &element)
 	}
 }
 
+void QueueWithPriority::Accelerate()
+{
+	for (int i = 0; i < allRecords.size(); i++)
+		if (allRecords[i].priority == LOW)
+			allRecords[i].priority = HIGH;
+}

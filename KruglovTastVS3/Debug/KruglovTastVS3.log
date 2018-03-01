@@ -1,2 +1,12 @@
-﻿  KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.exe
+﻿  QueueWithPriority.cpp
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(25): warning C4018: <: несоответствие типов со знаком и без знака
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(33): warning C4018: <: несоответствие типов со знаком и без знака
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(41): warning C4018: <: несоответствие типов со знаком и без знака
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(53): warning C4018: <: несоответствие типов со знаком и без знака
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(52): warning C4101: temp: неиспользованная локальная переменная
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(74): warning C4018: <: несоответствие типов со знаком и без знака
+  KruglovTastVS3.cpp
+  Создание кода...
+d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(48): warning C4715: QueueWithPriority::GetElementFromQueue: значение возвращается не при всех путях выполнения
+  KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.exe
   KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.pdb (Partial PDB)

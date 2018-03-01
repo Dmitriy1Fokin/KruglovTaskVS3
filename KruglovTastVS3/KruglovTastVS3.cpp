@@ -32,9 +32,16 @@ int main()
 		cin >> answerToExit;
 	}
 
+	cout << "All records:" << endl;
 	record.showAllRecords();
-	cout << endl << endl;
+	cout << "First record with high priority:" << endl;
 	record.showRecord(record.GetElementFromQueue());
+	cout << "All records after Accelerate:" << endl;
+	record.Accelerate();
+	record.showAllRecords();
+	cout << "First record with high priority:" << endl;
+	record.showRecord(record.GetElementFromQueue());
+
 
 	_getch();
 	return 0;
