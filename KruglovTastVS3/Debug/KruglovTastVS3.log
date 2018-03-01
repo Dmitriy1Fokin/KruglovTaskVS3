@@ -1,8 +1,2 @@
-﻿  QueueWithPriority.cpp
-d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(25): warning C4018: <: несоответствие типов со знаком и без знака
-d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(35): warning C4018: <: несоответствие типов со знаком и без знака
-d:\workspacecpp\kruglovtastvs3\kruglovtastvs3\queuewithpriority.cpp(34): warning C4101: temp: неиспользованная локальная переменная
-  KruglovTastVS3.cpp
-  Создание кода...
-  KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.exe
+﻿  KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.exe
   KruglovTastVS3.vcxproj -> D:\workspaceCpp\KruglovTastVS3\Debug\KruglovTastVS3.pdb (Partial PDB)

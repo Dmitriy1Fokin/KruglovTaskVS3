@@ -17,10 +17,8 @@ typedef struct
 
 class QueueWithPriority
 {
-public://///////////////////////////////////сделать пиватным и добавить метод show() с отображением всего дека
+private://///////////////////////////////////сделать пиватным и добавить метод show() с отображением всего дека
 	deque <QueueElement> allRecords;
-	//QueueElement elementName;
-	//ElementPriority priority;
 
 
 public:
@@ -33,14 +31,13 @@ public:
 	// Добавить в очередь элемент element с приоритетом priority
 	void PutElementToQueue(const QueueElement& element, ElementPriority priority);
 
-	void set1();
-
 	// Получить элемент из очереди
 	// метод должен возвращать элемент с наибольшим приоритетом, который был
 	// добавлен в очередь раньше других
 	QueueElement GetElementFromQueue();
 
 	void showAllRecords();
+	void showRecord(QueueElement &element);
 
 	// Выполнить акселерацию
 	void Accelerate();

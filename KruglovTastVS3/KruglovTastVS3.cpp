@@ -8,7 +8,6 @@ int main()
 	char answerToExit = 'Y';
 	int intPriority;
 	string stringRecord;
-	//ElementPriority priority;
 	QueueWithPriority record;
 	QueueElement element;
 
@@ -34,6 +33,8 @@ int main()
 	}
 
 	record.showAllRecords();
+	cout << endl << endl;
+	record.showRecord(record.GetElementFromQueue());
 
 	_getch();
 	return 0;
