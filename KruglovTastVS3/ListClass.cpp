@@ -22,8 +22,10 @@ void ListClass::insertRandNum(int numOfNum)
 void ListClass::show()
 {
 	list<int>::iterator i;
-	for (i = originList.begin(); i != originList.end(); i++)
-		cout << *i << endl;
+	int j = 0;
+
+	for (i = originList.begin(); i != originList.end(); i++, j++)
+		cout << j << ". " << *i << endl;
 }
 
 void ListClass::specialSort()
@@ -32,23 +34,29 @@ void ListClass::specialSort()
 	list<int>::iterator iterBegin = originList.begin();
 	list<int>::iterator iterEnd = originList.end();
 
-	for (int i = 0; i <= originList.size()/2; i++)
+	if (originList.size() % 2 == 1)
 	{
-		temp.push_back(*iterBegin);
-		iterBegin++;
-		iterEnd--;
-		temp.push_back(*iterEnd);
-
-		if ((&iterBegin == &(++iterEnd)) & (&iterEnd == &(--iterBegin)))
-			break;
-		if (&iterBegin == &iterEnd)
+		for (int i = 0; i < originList.size()/2; i++)
 		{
 			temp.push_back(*iterBegin);
-			break;
+			iterBegin++;
+			iterEnd--;
+			temp.push_back(*iterEnd);
 		}
+		temp.push_back(*iterBegin);
 	}
+	
+	if (originList.size() % 2 == 0)
+		for (int i = 0; i < originList.size() / 2; i++)
+		{
+			temp.push_back(*iterBegin);
+			iterBegin++;
+			iterEnd--;
+			temp.push_back(*iterEnd);
+		}
 
 	list<int>::iterator i;
-	for (i = temp.begin(); i != temp.end(); i++)
-		cout << *i << endl;
+	int j = 0;
+	for (i = temp.begin(); i != temp.end(); i++, j++)
+		cout << j << ". " << *i << endl;
 }
